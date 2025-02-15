@@ -1,0 +1,49 @@
+current:
+  provider: deepseek
+  model: deepseek-chat
+providers:
+  deepseek:
+    name: deepseek
+    description: DeepSeek AI Models
+    api_key:
+    base_url: https://api.deepseek.com/v1
+    models:
+    - name: deepseek-chat
+      description: General chat model
+      max_tokens: 4096
+    - name: deepseek-coder
+      description: Code specialized model
+      max_tokens: 4096
+  qwen:
+    name: qwen
+    description: Alibaba Qwen Models
+    api_key:
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    models:
+    - name: qwen-turbo
+      description: Fast and efficient model
+      max_tokens: 2048
+    - name: qwen-plus
+      description: More powerful model
+      max_tokens: 2048
+  gemini:
+    name: gemini
+    description: Google Gemini Models
+    api_key: null
+    base_url: null
+    models:
+    - name: gemini-pro
+      description: Advanced language model
+      max_tokens: 2048
+  openai:
+    name: openai
+    description: OpenAI Models
+    api_key: null
+    base_url: null
+    models:
+    - name: gpt-3.5-turbo
+      description: Fast and cost-effective
+      max_tokens: 4096
+    - name: gpt-4
+      description: Most capable model
+      max_tokens: 8192
